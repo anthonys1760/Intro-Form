@@ -1,5 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
 body {
-    background: url('/images/bg-intro-desktop.png')
+    font-family: 'poppins', serif;
+    background: url('/images/bg-intro-desktop.png');
+    background-color: hsl(0, 100%, 74%);
 }
 
 .bg-success {
@@ -9,5 +13,74 @@ body {
 .color {
     border: solid 2px white;
     background-color: white;
-    border-radius: 2px solid white;
+    border-radius: 5px;
+    padding: 30px;
 }
+
+footer {
+    position: relative;
+    top: 140px;
+}
+
+#try {
+    background-color: #5D54A3 !important;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+.learn {
+    position: relative;
+    top: 235px;
+}
+
+p, h1 {
+    color: white;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 55px;
+}
+
+span {
+    color: hsl(0, 100%, 74%);
+    font-weight: bold;
+}
+
+.container {
+    padding-top: 100px;
+}
+
+button {
+    text-transform: uppercase;
+    background-color: hsl(154, 59%, 51%) !important;
+    font-weight: 700 !important;
+}
+/* =============================================================================
+| Media Qeuries
+============================================================================= */
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .learn {
+        position: static;
+    }
+} 
+
+/*Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .learn {
+        position: static;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 35px;
+    }
+
+    #try {
+        padding: 40px;
+    }
+
+
+} 
+
