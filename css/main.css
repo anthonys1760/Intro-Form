@@ -1,3 +1,13 @@
 body {
     background: url('/images/bg-intro-desktop.png')
 }
+
+.bg-success {
+    background: purple !important;
+}
+
+.color {
+    border: solid 2px white;
+    background-color: white;
+    border-radius: 2px solid white;
+}
