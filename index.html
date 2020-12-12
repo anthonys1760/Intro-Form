@@ -34,35 +34,64 @@
         <!-- ===================================================================
         | Form Start
         =================================================================== -->
-        <form class="color">
+        <form class="color needs-validation">
 
           <div class="mb-3">
-            <label for="exampleInputName1" class="form-label" placeholder="Anthony">First Name</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <label for="exampleInputName1" class="form-label needs-validation" placeholder="Anthony">First Name</label>
+            <input type="text" class="form-control needs-validation" id="exampleInputEmail1" aria-describedby="emailHelp" required>
             <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
           </div>
           <div class="mb-3">
             <label for="exampleInputName1" class="form-label" placeholder="Anthony">Last Name</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
           </div>
           <div class="mb-3">
             <label for="exampleInputEmail1" class="form-label">Email address</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
           </div>
           <div class="mb-3">
             <label for="exampleInputPassword1" class="form-label">Password</label>
-            <input type="password" class="form-control" id="exampleInputPassword" aria-describedby="emailHelp">
+            <input type="password" class="form-control" id="exampleInputPassword" aria-describedby="emailHelp" required>
           </div>
 
           <!-- =================================================================
           | Button
           ================================================================= -->
           <div class="d-grid gap-2">
-            <button class="btn btn-success p-3" type="button">Claim Your Free Trial</button>
+            <button class="btn btn-success p-3" type="submit">Claim Your Free Trial</button>
             <p class="text-dark text-center">Sign up today to claim your free trial. <span>Start learning how to code now!</span></p>
           </div>
 
         </form><!-- /end form -->
+
+        <script>
+          // Example starter JavaScript for disabling form submissions if there are invalid fields
+          (function() {
+            'use strict';
+            window.addEventListener('load', function() {
+              // Fetch all the forms we want to apply custom Bootstrap validation styles to
+              var forms = document.getElementsByClassName('needs-validation');
+              // Loop over them and prevent submission
+              var validation = Array.prototype.filter.call(forms, function(form) {
+                form.addEventListener('submit', function(event) {
+                  if (form.checkValidity() === false) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                  }
+                  form.classList.add('was-validated');
+                }, false);
+              });
+            }, false);
+          })();
+          </script>
+
+          <script>
+            var checkCondition = document.querySelector('#exampleEmailInput1');
+
+            if (checkCondition === '') {
+              checkCondition.style.box-shadow = "red";
+            }
+          </script>
 
       </div><!-- /end col -->
 
