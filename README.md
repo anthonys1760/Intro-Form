@@ -14,7 +14,7 @@ Simple client side form validation. Check required, length, email and password m
 - checkEmail() to validate email with regex
 - checkPasswordsMatch() to match confirm password
 
-## Steps to execute this calculator:
+## Steps to execute this Form:
 - Download the entire code 
 - Open up the index.html.
 - [View Live Form](https://anthonys1760.github.io/Intro-Form/)
