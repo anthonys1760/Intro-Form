@@ -13,7 +13,7 @@ body {
 .color {
     border: solid 2px white;
     background-color: white;
-    border-radius: 5px;
+    border-radius: 7px;
     padding: 30px;
 }
 
@@ -30,7 +30,7 @@ footer {
 
 .learn {
     position: relative;
-    top: 235px;
+    top: 175px;
 }
 
 p, h1 {
@@ -60,11 +60,11 @@ button {
 | Media Qeuries
 ============================================================================= */
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
+/* @media only screen and (min-width: 600px) {
     .learn {
         position: static;
     }
-} 
+}  */
 
 /*Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
