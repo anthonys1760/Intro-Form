@@ -42,15 +42,15 @@
             <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
           </div>
           <div class="mb-3">
-            <label for="exampleInputName1" class="form-label" placeholder="Anthony">Last Name</label>
-            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+            <label for="exampleInputName2" class="form-label needs-validation" placeholder="Anthony">Last Name</label>
+            <input type="text" class="form-control needs-validation" id="exampleInputEmail2" aria-describedby="emailHelp" required>
           </div>
           <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Email address</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+            <label for="exampleInputEmail3" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail3" aria-describedby="emailHelp" required>
           </div>
           <div class="mb-3">
-            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <label for="exampleInputPassword4" class="form-label">Password</label>
             <input type="password" class="form-control" id="exampleInputPassword" aria-describedby="emailHelp" required>
           </div>
 
@@ -86,11 +86,13 @@
           </script>
 
           <script>
-            var checkCondition = document.querySelector('#exampleEmailInput1');
+            
+            let name = document.querySelector('#exampleInputEmail1');
+            
+            name.addEventListener("keydown", (event) => {
+              name.style.border = "3px solid #28a745";
+            });
 
-            if (checkCondition === '') {
-              checkCondition.style.box-shadow = "red";
-            }
           </script>
 
       </div><!-- /end col -->
